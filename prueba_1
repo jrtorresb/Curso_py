@@ -1,0 +1,17 @@
+]:
+# Ahora importamos la librería tweepy y vamos a iniciar la autenticación. Tweepy soporta autenticación tipo oauth
+#CREDENCIALES
+
+consumer_key='dHio2D1Wn5E9ewvyH1UztCwXI'
+consumer_secret='MujWhn8QAZqnj2j6MPTL0LahzkGcyr7JWTHwodTiNLghL3LICw'
+access_token='169281341-sAxL9eN0CrL4kuXFy0euXB0Z7DXT2jQc53RqIpHN'
+access_secret='RxYBl3yzVlMeG8kiLxeR0SSm9LrC91tWwjs8pQwPQWTct'
+
+authentication=tweepy.OAuthHandler(consumer_key, consumer_secret)
+authentication.set_access_token(access_token, access_secret)
+
+# La clase API permite el uso de los métodosde la API REST de tuiter 
+# http://tweepy.readthedocs.io/en/v3.6.0/getting_started.html
+
+
+api=tweepy.API(authentication)
